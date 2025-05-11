@@ -5,4 +5,6 @@ public interface Character {
     void takeDamage(int damage);
     int getStrength();
     int getCraft();
+
+    CharacterClass getCharacterClass();
 }
