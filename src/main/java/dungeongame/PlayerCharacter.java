@@ -1,5 +1,9 @@
 package dungeongame;
-
+/**
+ * Represents player character in dungeon game
+ * The player has different stats such as health, strength, craft
+ * Stats determined by class (Warrior or Wizard)
+ * */
 public class PlayerCharacter implements Character {
 
     private int health; /** Health of player  */
