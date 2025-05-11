@@ -2,6 +2,8 @@ package dungeongame;
 
 public class PlayerCharacter implements Character {
     private int health;
+    private int strength;
+    private int craft;
     private String name;
 
     @Override
@@ -10,8 +12,19 @@ public class PlayerCharacter implements Character {
     }
 
     @Override
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getCraft() {
+        return craft;
+    }
+
+    @Override
     public void takeDamage(int damage) {
         health -= damage;
     }
+
+
 
 }
