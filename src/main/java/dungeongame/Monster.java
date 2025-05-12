@@ -3,21 +3,28 @@ package dungeongame;
  * Represents monster character in dungeon game
  * The monster has different stats such as health, strength, craft
  * */
-public abstract class MonsterCharacter implements Character {
-    protected int health; /** Health of monster */
-    protected int strength; /** Strength of monster */
-    protected int craft; /** Craft of monster */
+public class Monster implements Character {
+    private String name; /** Name of monster */
+    private int health; /** Health of monster */
+    private int strength; /** Strength of monster */
+    private int craft; /** Craft of monster */
 
     /**
      * Constructs new MonsterCharacter
+     * @param name is the name of monster
      * @param health is the health of monster
      * @param strength is strength of monster
      * @param craft is craft of monster
      */
-    public MonsterCharacter(int health, int strength, int craft) {
+    public Monster(String name, int health, int strength, int craft) {
+        this.name = name;
         this.health = health;
         this.strength = strength;
         this.craft = craft;
+    }
+
+    public String getName() {
+        return name;
     }
 
     /**
@@ -56,19 +63,4 @@ public abstract class MonsterCharacter implements Character {
         health -= damage;
     }
 
-    /** Represents Spider class */
-    public static class Spider extends MonsterCharacter{
-        /** Constructs new Spider */
-        public Spider() {
-            super(0, 0, 0);
-        }
-    }
-
-    /** Represents Goblin class */
-    public static class Goblin extends MonsterCharacter{
-        /** Constructs new Goblin */
-        public Goblin() {
-            super(0, 0, 0);
-        }
-    }
 }
