@@ -56,25 +56,17 @@ public abstract class MonsterCharacter implements Character {
         health -= damage;
     }
 
-    /**
-     * Represents Spider class
-     */
-    public class Spider extends MonsterCharacter{
-        /**
-         * Constructs new Spider
-         */
+    /** Represents Spider class */
+    public static class Spider extends MonsterCharacter{
+        /** Constructs new Spider */
         public Spider() {
             super(0, 0, 0);
         }
     }
 
-    /**
-     * Represents Goblin class
-     */
+    /** Represents Goblin class */
     public static class Goblin extends MonsterCharacter{
-        /**
-         * Constructs new Goblin
-         */
+        /** Constructs new Goblin */
         public Goblin() {
             super(0, 0, 0);
         }

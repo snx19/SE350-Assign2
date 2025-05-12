@@ -61,9 +61,7 @@ public abstract class PlayerCharacter implements Character {
         health -= damage;
     }
 
-    /**
-     * Represents Wizard class
-     */
+    /** Represents Wizard class */
     public static class Wizard extends PlayerCharacter {
         /**
          * Constructs new Wizard
@@ -76,9 +74,7 @@ public abstract class PlayerCharacter implements Character {
             this.craft = 6;
         }
     }
-    /**
-     * Represents Warrior class
-     */
+    /** Represents Warrior class */
     public static class Warrior extends PlayerCharacter {
         /**
          * Constructs new Warrior
