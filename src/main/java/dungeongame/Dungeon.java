@@ -17,6 +17,10 @@ public class Dungeon {
         return currentChamber;
     }
 
+    public Character getPlayer () {
+        return player;
+    }
+
     public void movePlayer(Door door) {
         if (door.getMonster() == null) {
             if (door.getChamber1() == currentChamber ) {
