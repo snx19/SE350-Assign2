@@ -21,8 +21,17 @@ public abstract class PlayerCharacter implements Character {
      * Returns the players name
      * @return name of player
      */
+    @Override
     public String getName() {
         return name;
+    }
+
+    /**
+     * sets health for player
+     * @param health of player
+     */
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     /**
@@ -32,6 +41,14 @@ public abstract class PlayerCharacter implements Character {
     @Override
     public int getHealth() {
         return health;
+    }
+
+    /**
+     * sets strength for player
+     * @param strength of player
+     */
+    public void setStrength(int strength) {
+        this.strength = strength;
     }
 
     /**
