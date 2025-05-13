@@ -19,7 +19,6 @@ public class PrintError implements Action {
         this.dungeon = dungeon;
         this.exception = exception;
     }
-
     /**
      * Execute error by printing error msg
      * @param dungeon Dungeon where action occurs
