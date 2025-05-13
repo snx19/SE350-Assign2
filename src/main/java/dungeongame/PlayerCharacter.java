@@ -78,30 +78,4 @@ public abstract class PlayerCharacter implements Character {
         health -= damage;
     }
 
-    /** Represents Wizard class */
-    public static class Wizard extends PlayerCharacter {
-        /**
-         * Constructs new Wizard
-         * @param name is name of wizard
-         */
-        public Wizard(String name) {
-            super(name);
-            this.health = 15;
-            this.strength = 3;
-            this.craft = 6;
-        }
-    }
-    /** Represents Warrior class */
-    public static class Warrior extends PlayerCharacter {
-        /**
-         * Constructs new Warrior
-         * @param name is name of Warrior
-         */
-        public Warrior(String name) {
-            super(name);
-            this.health = 20;
-            this.strength = 6;
-            this.craft = 3;
-        }
-    }
 }
