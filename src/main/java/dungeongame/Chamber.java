@@ -20,6 +20,15 @@ public class Chamber {
     }
 
     /**
+     * Constructs a chamber with an item
+     * @param item the item added to chamber
+     */
+    public Chamber(Item item) {
+        this(); // calls the default constructor to initialize door and items list
+        this.items.add(item);
+    }
+
+    /**
      * Returns list of doors connected to this chamber
      * @return list of doors
      */
