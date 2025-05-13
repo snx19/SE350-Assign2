@@ -30,6 +30,7 @@ public abstract class PlayerCharacter implements Character {
      * sets health for player
      * @param health of player
      */
+    @Override
     public void setHealth(int health) {
         this.health = health;
     }
@@ -76,6 +77,9 @@ public abstract class PlayerCharacter implements Character {
     @Override
     public void takeDamage(int damage) {
         health -= damage;
+        if (health < 0) {
+            health = 0;
+        }
     }
 
 }

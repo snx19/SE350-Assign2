@@ -28,6 +28,14 @@ public class Monster implements Character {
     }
 
     /**
+     * sets monster health
+     * @param health current health of monster
+     */
+    @Override
+    public void setHealth(int health) {
+        this.health = health;
+    }
+    /**
      * Return monsters health
      * @return current health of monster
      */
@@ -61,6 +69,9 @@ public class Monster implements Character {
     @Override
     public void takeDamage(int damage) {
         health -= damage;
+        if (health < 0) {
+            health = 0;
+        }
     }
 
 }
